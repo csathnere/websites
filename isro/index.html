@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO Web Clone</title>
+    <link rel="shortcut icon" href="assets/img/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid topmenu">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg col-8">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">English</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">|</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">हिंदी</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">|</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">Sitemap</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">|</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">Contact us</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">|</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">Feedback</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">|</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">RTI</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">|</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">Career</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">|</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">Tender</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link">|</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#main">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav class="navbar navbar-expand-md col-4">
+                    <div class="container">
+                        <div class="d-none d-md-flex align-items-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="https://www.facebook.com/ISRO" target="_blank"
+                                        onclick="return confirm('You are visiting a link outside isro.gov.in. External Link that opens in a new window.')"
+                                        class="nav-link facebook" title="Facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://twitter.com/isro" target="_blank"
+                                        onclick="return confirm('You are visiting a link outside isro.gov.in. External Link that opens in a new window.')"
+                                        class="nav-link twitter" title="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.youtube.com/channel/UCw5hEVOTfz_AfzsNFWyNlNg" target="_blank"
+                                        onclick="return confirm('You are visiting a link outside isro.gov.in. External Link that opens in a new window.')"
+                                        class="nav-link youtube" title="YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.instagram.com/accounts/login/?next=/isro.dos/" target="_blank"
+                                        onclick="return confirm('You are visiting a link outside isro.gov.in. External Link that opens in a new window.')"
+                                        class="nav-link instagram" title="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a tabindex="0" style="cursor:pointer;" onclick="increaseFontSize()" id="Ainc"
+                                        title="Font size increase" class="nav-link">A+</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a tabindex="0" style="cursor:pointer;" onclick="resetFontSize()" id="Arest"
+                                        title="Normal font size" class="nav-link">A</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a tabindex="0" style="cursor:pointer;" onclick="decreaseFontSize()" id="Adec"
+                                        title="Font size decrease" class="nav-link">A-</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#main" title="Skip to main content" class="nav-link">
+                                        <span class="skiptomains">Skip to main content</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid topmenu-2">
+        <div class="container">
+            <img src="assets/img/isroBannerG20.png.webp" class="img-fluid" alt="">
+        </div>
+    </div>
+
+    <!-- main menubar -->
+    <div class="container-fluid main-menubar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About <i class="fas fa-chevron-down"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Activities <i class="fas fa-chevron-down"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services <i class="fas fa-chevron-down"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Programmes<i class="fas fa-chevron-down"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resorces <i class="fas fa-chevron-down"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Engage with us <i class="fas fa-chevron-down"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand" href="#"><img src="assets/img/Ch3Logo.jpg" alt="" height="20px"></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <hr class="br-">
+
+    <!-- small Carousel -->
+    <div class="container-fluid small-Crousel">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p> Flash News: Aditya-L1: Third Earth-bound maneuvre (EBN#3) is performed successfully. The new
+                            orbit attained is 296 km x 71767 km.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Flash News: Chandrayaan-3 MahaQuiz. Citizens invited to participate at
+                            https://isroquiz.mygov.in/</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p> Flash News: Chandrayaan-3: The lander and rover are in sleep mode. Awaiting their awakening
+                            around September 22, 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video or gif-->
+    <div class="container-fluid videodiv">
+        <!-- <video width="100%" height="385" controls muted autoplay>
+        <source src="https://www.isro.gov.in/media_isro/video/Home_video/Ch3_lander_descent_rover_rollout.webm" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+        <img src="assets/img/isro.gif" alt="" class="img-fluid" height="385px">
+    </div>
+
+    <!-- fixed -->
+    <div class="leftsideFixed">
+        <img src="assets/img/accer.webp" alt="">
+    </div>
+
+    <div class="rightsideFixed">
+        <div class="expanding elf1"><img src="assets/img/akamsidemenu.png" alt=""> AKAM </div>
+        <div class="expanding elf2"><img src="assets/img/contact.webp" alt=""> Contact us</div>
+        <div class="expanding elf3"><img src="assets/img/feedback.webp" alt=""> Ask in Expert</div>
+        <div class="expanding elf4"><img src="assets/img/askanexpert.webp" alt=""> Feedback</div>
+    </div>
+
+
+    <!-- News -->
+    <div class="container-fluid newsSection">
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <h1>Latest News</h1>
+                <div class="latestNews">
+                    <div class="collapsible">
+                        <div class="collapsible-header">
+                            Ch-2 orbiter Synthetic Aperture Radar images Ch-3 lander <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="collapsible-content">
+                            <a href="#main">Ch-2 orbiter Synthetic Aperture Radar images Ch-3 lander</a>
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="collapsible-header">
+                            Ch-2 orbiter Synthetic Aperture Radar images Ch-3 lander <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="collapsible-content">
+                            <a href="#main">Ch-2 orbiter Synthetic Aperture Radar images Ch-3 lander</a>
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="collapsible-header">
+                            High level Kenyan delegation visited ISRO HQ <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="collapsible-content">
+                            <a href="#main">High level Kenyan delegation visited ISRO HQ</a>
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="collapsible-header">
+                            Oman Minister visited ISRO <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="collapsible-content">
+                            <a href="#main">Oman Minister visited ISRO</a>
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="collapsible-header">
+                            Current Space Situation around the Moon – An assessment <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="collapsible-content">
+                            <a href="#main">Current Space Situation around the Moon – An assessment</a>
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="collapsible-header">
+                            Current Space Situation around the Moon – An assessment <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="collapsible-content">
+                            <a href="#main">Current Space Situation around the Moon – An assessment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <h1>Highlights</h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/Carousel/carousel30.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Carousel/carousel3.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/Carousel/carousel30.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  ISRO Portals-->
+
+    <div class="container-fluid isoroport">
+        <h3>ISRO Portals</h3>
+        <div class="isroPortals">
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/igrasp.webp" alt="" class="item">
+                    <div class="text-center">I-Grasp</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/bhoonidhi.png.webp " alt="" class="item">
+                    <div class="text-center">Bhoonidhi</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/bhuvan.png.webp" alt="" class="item">
+                    <div class="text-center">Bhuvan</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/vedas.png.webp" alt="" class="item">
+                    <div class="text-center">VEDAS</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/mosdac.jpg.webp" alt="" class="item">
+                    <div class="text-center">MOSDAC</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/igrasp.webp" alt="" class="item">
+                    <div class="text-center">I-Grasp</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/igrasp.webp" alt="" class="item">
+                    <div class="text-center">I-Grasp</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/igrasp.webp" alt="" class="item">
+                    <div class="text-center">I-Grasp</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+            <div class="isroPortalsDiv">
+                <div class="center-content">
+                    <img src="assets/img/igrasp.webp" alt="" class="item">
+                    <div class="text-center">I-Grasp</div>
+                    <div class="information-box">
+                        This is some information.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Recent Updates -->
+
+    <div class="container-fluid RecentUpdates">
+        <h3 class="mb-3">Recent Updates</h3>
+        <div class="container-fluid">
+            <div class="row RecentUpdate">
+                <div class="col-md-3 mt-2">
+                    <img src="assets/img/chandrayaan3_ind.jpg.webp" class="img-fluid" alt="">
+                    <!-- <div class="information-box2">
+                        This is some information.
+                    </div> -->
+                </div>
+                <div class="col-md-3 mt-2">
+                    <img src="assets/img/PSLVC56_PostImg.jpg.webp" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-3 mt-2">
+                    <img src="assets/img/mahaquiz1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-3 mt-2">
+                    <img src="assets/img/AzadiKaAmrit_large.png.webp" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- specials part -->
+    <div class="specials p-3">
+        <div class="container-fluid ">
+            <div class="row specialsPart">
+                <div class="col-md-12 mb-3">
+                    <h3 class="m-4">Autonomous bodies</h3>
+                    <div class="container-fluid Autonomousbodies">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="assets/img/PRL-new_small.jpg.webp" alt="">
+                                <p>PRL</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/narl_small.jpg.webp" alt="">
+                                <p>NARL</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/nesac_small.png.webp" alt="">
+                                <p>NESAC</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/iist_small.png.webp" alt="">
+                                <p>IIST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3 mb-3">
+        <div class="row specialsPart">
+            <div class="col-md-12 mb-3 pb-4">
+                <h3 class="m-4 text-center text-white">ISRO Centres & Units</h3>
+                <div class="isroCentrs">
+                    <span style="--i:1;"><img  class="img-fluid" src="assets/img/isroCentres/isroHQs.jpg.webp" alt=""></span>
+                    <span style="--i:2;"><img  class="img-fluid" src="assets/img/isroCentres/LPSC.jpg.webp" alt=""></span>
+                    <span style="--i:3;"><img  class="img-fluid" src="assets/img/isroCentres/SHAR.jpg.webp" alt=""></span>
+                    <span style="--i:4;"><img  class="img-fluid" src="assets/img/isroCentres/IIRS.png.webp" alt=""></span>
+                    <span style="--i:5;"><img  class="img-fluid" src="assets/img/isroCentres/LPSC.jpg.webp" alt=""></span>
+                    <span style="--i:6;"><img  class="img-fluid" src="assets/img/isroCentres/isroHQs.jpg.webp" alt=""></span>
+                    <span style="--i:7;"><img  class="img-fluid" src="assets/img/isroCentres/SHAR.jpg.webp" alt=""></span>
+                    <span style="--i:8;"><img  class="img-fluid" src="assets/img/isroCentres/VSSC.jpg.webp" alt=""></span>
+                    <span style="--i:9;"><img  class="img-fluid" src="assets/img/isroCentres/isroHQs.jpg.webp" alt=""></span>
+                    <span style="--i:10;"><img class="img-fluid"  src="assets/img/isroCentres/VSSC.jpg.webp" alt=""></span>                    
+                    <span style="--i:11;"><img class="img-fluid"  src="assets/img/isroCentres/VSSC.jpg.webp" alt=""></span>                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="specials p-3">
+        <div class="container-fluid ">
+            <div class="row specialsPart">
+                <div class="col-md-12 mb-3">
+                    <h3 class="m-4">IN-SPACe NSIL</h3>
+                    <div class="container-fluid Autonomousbodies">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/img/inspace_large.jpg.webp" alt="">
+                                <p>IN-SPACe</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/img/NSIL_large.jpg.webp" alt="">
+                                <p> NSIL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="container-fluid Useful-Links mt-3 pb-4">
+        <h3 class="text-white text-center p-4">Useful Links</h3>
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="button text-center">
+                  <button type="button" class="m-2 btn btn-outline-primary">Related Links</button>
+                  <button type="button" class="m-2 btn btn-outline-secondary">Government Portal</button>
+                  <button type="button" class="m-2 btn btn-outline-success">Reports</button>
+                  <button type="button" class="m-2 btn btn-outline-danger">Policies</button>
+                  <button type="button" class="m-2 btn btn-outline-warning">All</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid p-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="text-white">Address</h4>
+                    <address class="text-center text-white">
+                        ISRO Headquarters, Antariksh Bhavan, New BEL Road
+                        Bengaluru-560 094
+                        Phone: +91 80 22172294 / 96
+                        Email: isropr[at]isro[dot]gov[dot]in
+                    </address>
+
+                </div>
+                <div class="col-md-5">
+                    <ul class="arrow-list">
+                        <li><a href="#">RTI</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Website Policy</a></li>
+                        <li><a href="#">Copyright Policy</a></li>
+                        <li><a href="#">Hyper Linking Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Archives</a></li>
+                        <li><a href="#">Web Information Manager</a></li>
+                        <li><a href="#">Space Policy</a></li>
+                        <li><a href="#">Parliament Questions</a></li>
+                        <li><a href="#">PIB</a></li>
+                        <li><a href="#">e-Saral Hindi Vakyakosh</a></li>
+                        <li><a href="#">Related links</a></li>
+                        <li><a href="#">Check Your 7th CPC Pension Revision Status</a></li>
+                        <li><a href="#">Pensioners' Portal</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-2">
+                    <img src="assets/img/india_code_logo.jpg.webp" alt="">
+                    <img src="assets/img/indiagov_logo.jpg.webp" alt="">
+                    <img src="assets/img/STQC.jpg.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer text-center text-white">
+            © Copyright 2023 ISRO. All Rights Reserved <br>
+            Designed by CITG/MSA VSSC/ISRO
+        </div>
+    </footer>
+    <!-- script -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

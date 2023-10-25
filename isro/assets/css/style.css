@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+/* body{
+    background: #000;
+} */
+.topmenu, .main-menubar{
+    background-color: #174973;
+}
+.topmenu a{
+    color: #fff !important;
+    font-size: 0.9em;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.main-menubar a{
+    color: #fff;
+}
+.topmenu .nav-item{
+    padding: 3px;
+}
+.topmenu-2 {
+    background-color:#032848;
+    padding: 8px;
+}
+.main-menubar i{
+    font-size: 0.6em;
+}
+.main-menubar a{
+    font-size: 1.1em;
+    padding: 0px 4px;
+}
+.br-{
+    border: 2px solid;
+    margin: 0;
+}
+.small-Crousel{
+    background-color: #04223d;
+    height: 70px;
+}
+.small-Crousel .carousel-item{
+    height: 70px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.videodiv{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftsideFixed{
+    position: fixed;
+    z-index: 900;
+    left: 2px;
+    top: 45%;
+}
+.leftsideFixed img{
+    height: 60px;
+}
+.leftsideFixed img:hover{
+    height: 62px;
+}
+.expanding{
+    z-index: 900;
+    position: fixed;
+    right:2px;
+}
+.elf1{top: 30%;}
+.elf2{top: 40%;}
+.elf3{top: 60%;}
+.elf4{top: 50%;}
+
+.expanding {
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    transition: width 0.3s;
+  }
+  .expanding img{
+    height: 53px;
+  }  
+  .expanding:hover {
+    width: 180px;
+    cursor: pointer;
+  }
+
+  .newsSection{
+    justify-content: space-around;
+    background-color: #C9D8FA;
+    padding: 25px;
+  }
+.newsSection h1{
+    color: aliceblue#03234A;
+    font-size: 22px;
+    font-family:verdana, serif;
+    font-weight: bold;
+}
+.latestNews{
+    overflow-y:scroll;
+    height: 200px;
+    background: #000;
+}
+.collapsible-header {
+    position: relative;
+    cursor: pointer;
+    user-select: none; 
+    min-height: 45px;
+    padding: 8px;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid white;
+    background: linear-gradient(to left, #0707ec, #492ff5, #141480);
+} 
+.collapsible-header .arrow {
+    position: absolute;
+    top: 25%;
+    right: 2cqmin;
+}       
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+.collapsible.active .arrow {
+    transform: rotate(180deg);
+}
+.collapsible-content {
+    background: #fff;
+    font-weight: 700;
+    display: none;
+    height: 45px;
+    padding: 8px;
+}
+.collapsible-content a{
+    text-decoration: none;
+}
+
+.collapsible.active .collapsible-content {
+    display: block;
+}
+.isroPortals{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: space-between
+}
+.isoroport{
+    background-color: #07075f;
+    color: #FFF;
+    padding: 10px;
+}
+.isroPortalsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.information-box {
+    position: absolute;
+    bottom: 110%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bde5fc;
+    color: #000;
+    font-size: 0.8em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; 
+  }
+.isroPortalsDiv:hover .information-box {
+    opacity: 1;
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {    
+    border: 3px solid #3498db;
+    color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .isroPortals {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+.RecentUpdates{
+    background-color: #ecedf0;
+    padding: 20px 3px;
+}
+.RecentUpdate{
+    border-top: 4px solid blue;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5), 5px 0 10px rgba(0, 0, 0, 0.5);;
+    background-color: #fff;
+    padding: 20px;
+}
+.information-box2{
+    position: absolute;
+    color: #861d1d;
+    /* opacity: 0; */
+}
+
+.RecentUpdate .col-md-3 img{
+    width: 90%;
+    border: 1px solid black;
+}
+.RecentUpdate img{
+    width: 100% !important;
+}
+.RecentUpdate img:hover{
+    filter: brightness(50%);
+}
+.specials{
+    background-color: #3477b1;
+}
+.specialsPart{
+    background-color: #07075f;
+    box-shadow: -10px 11px 10px #00000080;
+}
+.specials h3{
+    text-align: center;
+    color: #fff;
+}
+.specials .Autonomousbodies img{
+    width: 100%;
+}
+.specials .Autonomousbodies p{
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.specials .Autonomousbodies .row{
+    justify-content: space-around;
+}
+.specials .Autonomousbodies .col-2{
+    border: 2px solid #e69a0f;
+    border-radius: 5px;
+    padding: 0;
+    margin:5px 5px;    
+}
+.isroCentrs{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    justify-content: center;
+    margin-left: 33%;
+}
+@keyframes animate {
+    0%{ transform: perspective(1000px) rotateY(0deg);}
+    100%{ transform: perspective(1000px) rotateY(360deg);}
+}
+.isroCentrs span{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    margin: 10px;
+    width: 80%;
+    height: 80%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*40deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px liner-gradien(transparent, transparent,#0004);
+}
+.isroCentrs span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 80%;
+
+}
+.Useful-Links{
+   background: linear-gradient(to right, #240802, #6b0707,#060470);;
+}
+.button button{
+    border-radius: 15px;
+    min-width: 100px;
+}
+footer{
+    background: #03035f;
+    align-items: center;
+}
+footer img{
+    width: 50%;
+    margin: 6px;
+}
+
+footer .arrow-list{
+    column-count: 3;
+    text-decoration: none;
+    margin: 10px 3px;
+    color: #fff;
+}
+@media (max-width: 1100px) {
+    footer .arrow-list {
+      column-count: 2; 
+    }
+}
+@media (max-width: 768px) {
+    footer .arrow-list {
+      column-count: 1; 
+    }
+}
+address{
+    border-radius: 10px 5px ;
+    border: 1px solid #fff;
+    border-bottom: 5px solid #fff;
+    padding: 10px 5px;
+}
+footer a{
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+.footer{
+    align-items: center;
+    justify-content: center;    
+    padding: 40px;
+    max-height: 200px;
+    min-height: 100px;
+    border-top: 2px solid darkblue;
+}
